@@ -22,7 +22,7 @@ return {
   },
   opts = {
     size = 20,
-    shell = "pwsh",
+    shell = "zsh",
     direction = "horizontal",
     shade_filetypes = {},
     hide_numbers = true,
