@@ -157,10 +157,21 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "stylua",
-        "shellcheck",
-        "shfmt",
-        "flake8",
+        "tsserver",            -- JS/TS/JSX/TSX
+        "eslint",              -- JS/TS linting
+        "html",                -- HTML
+        "cssls",               -- CSS/SCSS
+        "tailwindcss",         -- Tailwind autocompletion
+        "jsonls",              -- JSON
+        "marksman",            -- Markdown
+        "dotenv-language-server", -- .env files
+
+        -- Formatters / Linters
+        "prettier",            -- Code formatter for JS/TS/HTML/CSS/MD
+        "stylua",              -- Lua formatter
+        "shellcheck",          -- Shell script linter
+        "shfmt",               -- Shell script formatter
+        "flake8",              -- Python linter (optional)
       },
     },
   },
