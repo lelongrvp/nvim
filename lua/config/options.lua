@@ -24,10 +24,9 @@ vim.g.lazygit_config = true
 
 -- Optionally setup the terminal to use
 -- This sets `vim.o.shell` and does some additional configuration for:
--- * pwsh
--- * powershell
-LazyVim.terminal.setup("pwsh")
-vim.o.shell = "pwsh"
+-- * zsh
+LazyVim.terminal.setup("zsh")
+vim.o.shell = "zsh"
 
 local opt = vim.opt
 

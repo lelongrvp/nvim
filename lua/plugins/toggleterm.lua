@@ -1,23 +1,13 @@
 return {
   "akinsho/toggleterm.nvim",
-  lazy = true,
-  cmd = { "ToggleTerm" },
-  build = ":ToggleTerm",
-  settings = {
-    Lua = {
-      diagnostics = {
-        globals = { "vim" },
-      },
-    },
-  },
+  version = "*",
+  config = true,
   keys = {
     {
       "<C-/>",
-      function()
-        local count = vim.v.count1
-        require("toggleterm").toggle(count, 0, LazyVim.root.get(), "horizontal")
-      end,
-      desc = "Toggleterm (horizontal root_dir)",
+      "<cmd>ToggleTerm<cr>",
+      desc = "Toggle terminal",
+      mode = { "n", "t" },
     },
   },
   opts = {
@@ -30,5 +20,7 @@ return {
     terminal_mappings = true,
     start_in_insert = true,
     close_on_exit = true,
+    persist_size = true,
+    persist_mode = true,
   },
 }
