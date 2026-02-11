@@ -157,21 +157,21 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "tsserver",            -- JS/TS/JSX/TSX
-        "eslint",              -- JS/TS linting
-        "html",                -- HTML
-        "cssls",               -- CSS/SCSS
-        "tailwindcss",         -- Tailwind autocompletion
-        "jsonls",              -- JSON
-        "marksman",            -- Markdown
+        "tsserver", -- JS/TS/JSX/TSX
+        "eslint", -- JS/TS linting
+        "html", -- HTML
+        "cssls", -- CSS/SCSS
+        "tailwindcss", -- Tailwind autocompletion
+        "jsonls", -- JSON
+        "marksman", -- Markdown
         "dotenv-language-server", -- .env files
 
         -- Formatters / Linters
-        "prettier",            -- Code formatter for JS/TS/HTML/CSS/MD
-        "stylua",              -- Lua formatter
-        "shellcheck",          -- Shell script linter
-        "shfmt",               -- Shell script formatter
-        "flake8",              -- Python linter (optional)
+        "prettier", -- Code formatter for JS/TS/HTML/CSS/MD
+        "stylua", -- Lua formatter
+        "shellcheck", -- Shell script linter
+        "shfmt", -- Shell script formatter
+        "flake8", -- Python linter (optional)
       },
     },
   },
