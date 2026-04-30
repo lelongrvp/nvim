@@ -20,10 +20,10 @@ return {
 
       auto_follow_cursor = false, -- Don't follow the cursor after getting response
       show_help = true, -- Show help in virtual text for @workspace and other context
-      
+
       -- Use built-in contexts for workspace awareness
       -- Available: buffer, buffers, files, register, url
-      
+
       -- Prompts for workspace operations
       prompts = {
         Explain = "Explain how this code works.",
@@ -83,7 +83,7 @@ return {
     config = function(_, opts)
       local chat = require("CopilotChat")
       local select = require("CopilotChat.select")
-      
+
       -- Use unnamed register for the selection
       opts.selection = select.unnamed
 
@@ -162,7 +162,9 @@ return {
         function()
           local ok, telescope = pcall(require, "telescope")
           if ok then
-            vim.cmd("lua require('CopilotChat.integrations.telescope').pick(require('CopilotChat.actions').prompt_actions({selection = require('CopilotChat.select').visual}))")
+            vim.cmd(
+              "lua require('CopilotChat.integrations.telescope').pick(require('CopilotChat.actions').prompt_actions({selection = require('CopilotChat.select').visual}))"
+            )
           else
             vim.notify("Telescope not available", vim.log.levels.WARN)
           end
@@ -291,3 +293,4 @@ return {
     },
   },
 }
+
